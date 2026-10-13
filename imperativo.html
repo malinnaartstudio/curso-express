@@ -1,4 +1,5 @@
 <!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<link rel="icon" type="image/png" href="logo.png"><link rel="apple-touch-icon" href="logo.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Carlito:wght@400;700&family=Noto+Serif+Display:ital,wdth,wght@1,62.5,400;1,62.5,700&display=swap" rel="stylesheet">
 <title>Imperativo</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -549,13 +550,31 @@ try{window.speechSynthesis&&window.speechSynthesis.getVoices()}catch(e){}
 </script>
 
 
-<div id="mas-nav" style="background:#1E3260;color:#fff;padding:22px 16px;margin-top:32px;font-family:'Source Sans 3','Segoe UI',system-ui,sans-serif">
-<div style="max-width:1080px;margin:0 auto;display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between">
-<a href="./" style="color:#F28BA6;font-weight:600;text-decoration:none">← Експрес-курс: усі уроки</a>
-<span style="flex:1 1 260px;color:#DCE1F2">Хочеш вчитися системно, з підручником і перевіркою? Курси Español українською:</span>
-<span style="display:flex;gap:8px;flex-wrap:wrap">
-<a href="https://espanol-ukrayinskoiu.kwiga.com/courses/espanol-ukrayinskoiu-nivel-a1?utm_source=curso-express&utm_campaign=imperativo" target="_blank" rel="noopener" style="background:#BF1A4D;color:#fff;padding:9px 16px;border-radius:999px;font-weight:600;text-decoration:none">Курс A1</a>
-<a href="https://espanol-ukrayinskoiu.kwiga.com/courses/espanol-ukrayinskoiu-nivel-a2?utm_source=curso-express&utm_campaign=imperativo" target="_blank" rel="noopener" style="background:#BF1A4D;color:#fff;padding:9px 16px;border-radius:999px;font-weight:600;text-decoration:none">Курс A2</a>
-<a href="https://www.instagram.com/malinnaartstudio/" target="_blank" rel="noopener" style="border:1px solid #F28BA6;color:#fff;padding:8px 16px;border-radius:999px;text-decoration:none">Instagram</a>
-</span></div></div>
+<div id="mas-nav"><div class="mn-in">
+<a class="mn-back" href="./"><img src="logo.png" alt="" width="28" height="28"><span>Експрес-курс<br><small>усі уроки</small></span></a>
+<p class="mn-txt"><b>Хочете вчитися системно?</b> Повні курси «Español українською» з підручником і тренажерами.</p>
+<span class="mn-btns"><a class="mn-b" href="https://espanol-ukrayinskoiu.kwiga.com/courses/espanol-ukrayinskoiu-nivel-a1?utm_source=curso-express&utm_campaign=imperativo" target="_blank" rel="noopener">Курс A1</a><a class="mn-b" href="https://espanol-ukrayinskoiu.kwiga.com/courses/espanol-ukrayinskoiu-nivel-a2?utm_source=curso-express&utm_campaign=imperativo" target="_blank" rel="noopener">Курс A2</a><a class="mn-b mn-o" href="https://www.instagram.com/malinnaartstudio/" target="_blank" rel="noopener">Instagram</a></span>
+</div></div>
+<style id="theme">
+:root{--bg:#fbf7f1;--card:#fffdfa;--ink:#2b2226;--muted:#6f636a;--line:#e6d9ca;--glow:#f3eadf;
+--rasp:#c4184a;--rasp-soft:#fbe2ea;--band:#16294f;--band-ink:#f3f6fd;--band-line:#2f4a82;--band-card:#1c3768;--band-soft:#d3dcf1;--band-pink:#ff9bb7;
+--f-display:'Noto Serif Display',Georgia,serif;--f-body:Carlito,Calibri,'Segoe UI',system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--band:#0b2445;--band-card:#13264e}}
+:root[data-theme="dark"]{--band:#0b2445;--band-card:#13264e}
+body{font-family:var(--f-body);-webkit-font-smoothing:antialiased}
+:focus-visible{outline:3px solid var(--rasp);outline-offset:2px}
+.cj th{background:var(--rasp)}
+#mas-nav{background:#0b2445;color:#d3dcf1;padding:22px 16px calc(22px + env(safe-area-inset-bottom,0px));margin-top:36px;font-family:Carlito,Calibri,'Segoe UI',system-ui,sans-serif}
+#mas-nav .mn-in{max-width:1080px;margin:0 auto;display:flex;flex-wrap:wrap;gap:14px 22px;align-items:center;justify-content:space-between}
+#mas-nav .mn-back{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-family:'Noto Serif Display',Georgia,serif;font-style:italic;font-stretch:62.5%;font-size:1.5rem;line-height:1}
+#mas-nav .mn-back small{font-family:Carlito,Calibri,sans-serif;font-style:normal;font-size:.62rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#ff9bb7}
+#mas-nav .mn-txt{flex:1 1 260px;margin:0;font-size:1rem;line-height:1.5}
+#mas-nav .mn-txt b{color:#fff}
+#mas-nav .mn-btns{display:flex;flex-wrap:wrap;gap:8px}
+#mas-nav .mn-b{background:#c4184a;color:#fff;text-decoration:none;font-weight:700;font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;padding:.9em 1.3em;border-radius:4px;box-shadow:0 10px 26px rgba(196,24,74,.35)}
+#mas-nav .mn-b:hover{background:#9d1239}
+#mas-nav .mn-o{background:transparent;border:1px solid #ff9bb7;box-shadow:none}
+@media print{#mas-nav{display:none}}
+.brand,.dlg-h h4,.duo .big,.ends .w,.formula,.hero .sub,.lv button b,.num,.out,footer b,h1,h2,h3{font-style:italic;font-stretch:62.5%;letter-spacing:0}
+</style>
 </body></html>
