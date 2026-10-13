@@ -9,7 +9,7 @@
 <link rel="apple-touch-icon" href="logo.png">
 <meta property="og:title" content="Інтерактивний експрес-курс · Español українською">
 <meta property="og:description" content="23 безкоштовні уроки іспанської з озвучкою та вправами. Пояснення українською.">
-<meta property="og:image" content="banner.jpg">
+<meta property="og:image" content="https://malinnaartstudio.github.io/curso-express/banner-wide.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Carlito:wght@400;700&family=Noto+Serif+Display:ital,wdth,wght@1,62.5,400&family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
@@ -41,7 +41,10 @@ a{color:inherit}
 /* hero */
 .hero{position:relative;color:#fff;background:radial-gradient(70% 70% at 92% 10%,rgba(240,138,168,.30),transparent 60%),radial-gradient(60% 70% at 0% 100%,rgba(86,128,214,.30),transparent 62%),linear-gradient(180deg,#1c3768,#13264e);overflow:hidden}
 .hero::before{content:"";position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Cg fill='none' stroke='%23ff9bb7' stroke-width='1.2'%3E%3Cpath d='M28 4 52 28 28 52 4 28Z'/%3E%3Cpath d='M28 16 40 28 28 40 16 28Z'/%3E%3C/g%3E%3C/svg%3E") 0 0/56px 56px;opacity:.05;pointer-events:none}
-.hero .wrap{position:relative;padding-block:clamp(2.6rem,7vw,5rem);display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(1.6rem,4vw,3.5rem);align-items:center}
+.banner{background:#13264e;line-height:0}
+.banner img{display:block;width:100%;height:auto}
+.hero .wrap{position:relative;padding-block:clamp(2.2rem,5vw,3.6rem);display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(1.4rem,4vw,3.5rem);align-items:end}
+.hero .side .lead{margin-bottom:1.2rem}
 .hero figure{margin:0;border-radius:22px;overflow:hidden;box-shadow:0 30px 60px rgba(5,15,40,.45),0 0 0 1px rgba(255,255,255,.14);transform:rotate(1.2deg)}
 .hero figure img{display:block;width:100%;height:auto;aspect-ratio:760/468}
 .hero .kicker{color:#ff9bb7}
@@ -125,15 +128,17 @@ footer a{color:#ff9bb7}
 <a class="btn btn-rose" href="go-kwiga.html" target="_blank" rel="noopener">Курси</a>
 </div></header>
 
+<div class="banner"><picture><source media="(max-width:700px)" srcset="banner-m.jpg" width="1092" height="700"><img src="banner-wide.jpg" alt="Español українською — іспанська для українців в Іспанії" width="1774" height="887"></picture></div>
 <section class="hero"><div class="wrap">
 <div>
 <p class="kicker">Безкоштовно · без реєстрації</p>
 <h1>Інтерактивний <em>експрес-курс</em></h1>
+</div>
+<div class="side">
 <p class="lead">Іспанська з поясненнями українською, у вашому темпі. Натискаєте на фразу — чуєте живу вимову. Робите вправу — одразу бачите, де помилка.</p>
 <ul class="chips"><li>A1 · перші фрази</li><li>A2 · типові ситуації</li><li>B1 · нюанси</li></ul>
 <div class="cta"><a class="btn btn-rose" href="presente.html">Почати з уроку 1</a><a class="btn btn-line" href="#m1">Усі уроки</a></div>
 </div>
-<figure><img src="banner.jpg" alt="Español українською — нічний Бенідорм з моря" width="760" height="468"></figure>
 </div></section>
 
 <div class="facts"><div class="wrap"><ul>
